@@ -3,18 +3,40 @@ html {
 }
 
 .App {
+  background: linear-gradient(blue, yellow);
+  text-align: center;
+  color: black;
+
   &__header {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: #fff 1px 0 0,
+      #fff 0 1px 0,
+      #fff -1px 0 0,
+      #fff 0 -1px 0;
   }
 }
 
 .Good {
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 250px;
+  margin: 0 auto;
+  gap: 30px;
+  padding-bottom: 5px;
+
+  font-size: 24px;
 
   &--active {
-    background-color: #ff0;
+    background-color: rgba($color: #b48989, $alpha: 0.2);
   }
 }
